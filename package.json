@@ -5,7 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"prettier": "prettier --write package.json \"src/**/*\"",
-		"lint": "eslint --ext .ts,.tsx ./src"
+		"prettier:ci": "prettier package.json \"src/**/*\"",
+		"lint": "eslint --ext .ts,.tsx ./src",
+		"ts": "tsc",
+		"check": "npm run prettier && npm run lint && npm run ts"
 	},
 	"repository": {
 		"type": "git",
