@@ -1,5 +1,5 @@
 {
-	"name": "react-custom-hooks",
+	"name": "@fliegwerk/react-custom-hooks",
 	"version": "0.1.0",
 	"description": "Some useful custom hooks for React",
 	"main": "index.js",
