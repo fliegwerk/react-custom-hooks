@@ -20,14 +20,15 @@ export const DEFAULT_DELAY = 800; /* ms */
  *
  * @see https://dev.to/gabe_ragland/debouncing-with-react-hooks-jci
  */
-export default function useDebounce(
-	value: string,
+export default function useDebounce<T>(
+	value: T,
 	delay = DEFAULT_DELAY
-): [string, () => void] {
-	const [debouncedValue, setDebouncedValue] = useState<string>(value);
+): [T, () => T] {
+	const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
 	const updateImmediately = () => {
 		setDebouncedValue(value);
+		return value;
 	};
 
 	useEffect(() => {
