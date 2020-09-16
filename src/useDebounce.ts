@@ -16,7 +16,7 @@ export const DEFAULT_DELAY = 800; /* ms */
  * @param delay the delay to wait before updating the returned debounced value
  *
  * @returns the debounced value and a trigger function
- * to update the debounced value immediately
+ * to update the debounced value immediately which returns the updated value
  *
  * @see https://dev.to/gabe_ragland/debouncing-with-react-hooks-jci
  */
