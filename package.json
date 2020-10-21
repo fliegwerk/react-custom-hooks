@@ -26,7 +26,7 @@
 	},
 	"homepage": "https://github.com/fliegwerk/react-custom-hooks#readme",
 	"dependencies": {
-		"react": "^16.14.0"
+		"react": "^17.0.0"
 	},
 	"devDependencies": {
 		"@types/react": "^16.9.53",
