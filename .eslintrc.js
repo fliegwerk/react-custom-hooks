@@ -3,14 +3,12 @@ module.exports = {
 		browser: true,
 		es2020: true
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:react/recommended',
-		'plugin:@typescript-eslint/recommended',
-		'prettier',
-		'prettier/@typescript-eslint',
-		'prettier/react'
-	],
+	settings: {
+		react: {
+			pragma: 'React',
+			version: 'detect'
+		}
+	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaFeatures: {
@@ -20,11 +18,14 @@ module.exports = {
 		sourceType: 'module'
 	},
 	plugins: ['react', '@typescript-eslint'],
-	rules: {},
-	settings: {
-		react: {
-			pragma: 'React',
-			version: 'detect'
-		}
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:react/recommended',
+		'plugin:prettier/recommended',
+		'prettier'
+	],
+	rules: {
+		'prettier/prettier': 'warn'
 	}
 };
